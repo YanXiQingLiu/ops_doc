@@ -956,6 +956,19 @@
         os.chdir()                 # 改变当前工作目录
         os.walk('/root/')          # 递归路径
         os.environ['HOME']         # 查看系统环境变量
+					windows：
+					os.environ['HOMEPATH']:当前用户主目录。
+					os.environ['TEMP']:临时目录路径。
+					os.environ[PATHEXT']:可执行文件。
+					os.environ['SYSTEMROOT']:系统主目录。
+					os.environ['LOGONSERVER']:机器名。
+					os.environ['PROMPT']:设置提示符。
+					linux：
+					os.environ['USER']:当前使用用户。
+					os.environ['LC_COLLATE']:路径扩展的结果排序时的字母顺序。
+					os.environ['SHELL']:使用shell的类型。
+					os.environ['LAN']:使用的语言。
+					os.environ['SSH_AUTH_SOCK']:ssh的执行路径。
         os.statvfs("/")            # 获取磁盘信息
 
         文件处理
